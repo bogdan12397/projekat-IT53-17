@@ -1,0 +1,502 @@
+*{
+	padding:0;
+	margin:0;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	overflow-x:hidden;
+	background-image: linear-gradient(to bottom left,#ffd700, rgb(116, 74, 2));;;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+.preheader{
+	background-color: rgba(0, 0, 0, 1);
+	color:orange;
+	height: 50px;
+}
+.preheader-text{
+	text-align: left;
+	padding-top: 15px;
+	padding-left: 150px;
+}
+.header{
+	position: sticky;
+	position: -webkit-sticky;
+	top:0;
+}
+.container {
+    background-image: linear-gradient(to top right,#ffd700, rgb(116, 74, 2));;
+    width: 100%;
+    z-index: 1;
+}
+.column3 {
+  float:left;
+  width: 33%;
+  padding-top:100px;
+  padding-bottom: 100px;
+}
+#tel {
+	margin-top:100px;
+	background-color:rgba(120, 120, 120, 0.8);
+	font-weight: bold;
+	border-radius:50px 25px 50px 25px;
+	font-weight:bold;
+	font-size:20px;
+	padding-bottom:70px;
+}
+.bojatel1 {
+	color:Red;
+}
+.column {
+  float:left;
+  flex: 50%;
+  font-weight: bold; 
+}
+.logo{
+	float: left;
+    padding-left:20px;
+  	width: 25%;
+  	height: auto;
+}
+.inlinetext{
+	position: relative;
+	margin-top: 15px;
+	padding: 30px 50px 0px 20px;
+	text-align: center;
+}
+#reg{
+	margin-left:80px;
+	margin-right:30px;
+	font-size:13px;
+}
+#prvi{
+	margin-top:50px;
+}
+.nav{
+	background-image: linear-gradient(to bottom left,#ffd700, rgb(116, 74, 2));;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline-block;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+    color: black;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	font-family: 'Poppins', sans-serif;
+}
+.nav a:hover {
+	color:white;
+}
+.padajuci {
+	display:none;
+}
+.parallax {
+	padding-top: 10%;
+	padding-bottom: 10%;
+	width: 100%;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5)),url(slike/pozadina.jpg);
+	height: auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat-x;
+	background-size: cover;
+}
+.parallax1{
+	padding-top:50px;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 1)),url(slike/123.jpeg);
+	height: 800px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;	
+	background-size: cover;
+	
+}
+.naslov1{
+	color:whitesmoke;
+	text-transform: uppercase;
+	font-weight:bold;
+	font-family: 'Poppins', sans-serif;
+	padding-top:2%;
+	text-align: center;
+}
+.naslov2{
+	color:rgb(230, 230, 0);
+	text-transform: uppercase;
+	font-weight:bold;
+	font-family: 'Poppins', sans-serif;
+	padding-top:2%;
+	text-align: center;
+}
+.uredjentext{
+	color:whitesmoke;
+	font-weight:bold;
+	text-align:justify;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top: 5%;
+}
+.uredjentext1{
+	display:block;
+	color:white;
+	text-transform: uppercase;
+	font-weight:bold;
+	text-align:center;
+}
+.columnfix{
+  float: left;
+  padding: 2%;
+  flex: 50%;
+  font-weight: bold;
+  text-align: justify;
+  height: auto;
+}
+.row2{
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.columnfix2{
+  flex:100%;
+  background-color:rgb(36, 36, 36);
+  padding-bottom: 5%;
+  font-weight: bold;
+  text-align: justify;
+  height: auto;
+}
+.uredjentext5{
+	color:whitesmoke;
+	font-weight:bold;
+	font-size: 24px;
+	text-align:center;
+	padding-top: 2%;
+}
+.img{
+  float:right;
+  margin-left: 30px;
+}
+.img2{
+	float:left;
+	margin-right: 30px;
+}
+.row{
+	display: flex;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.columnfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column1 {
+  width: 100%;
+}
+footer {
+  position: fixed;
+  left:0;
+  bottom: 0;
+  height:5%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.animacija {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  animation-name:laser;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes laser {
+	0%   {background-color:red; left:-175px; top:-20px;}
+	25%  {background-color:yellow; left:175px; top:-20px;border-radius:50%}
+	50%  {background-color:blue; left:175px; top:0;border-radius:0%}
+	75%  {background-color:green; left:-175px; top:0;border-radius:50%}
+	100% {background-color:red; left:-175px; top:-20px;border-radius:0%}
+  
+}
+.footertext{
+	padding-top:10px;
+	font-size:13px;
+	font-weight:bold;
+	text-align: center;
+}
+.mreze{
+	position: absolute;
+	top:20%;
+	left:77%;
+	font-size: 20px;
+}
+.fa-facebook:hover,
+.fa-google:hover,
+.fa-youtube:hover,
+.fa-instagram:hover,
+.fa-snapchat-ghost:hover,
+.fa-at:hover{
+	color: orange;
+}
+.fa-facebook, 
+.fa-google, 
+.fa-youtube,
+.fa-instagram,
+.fa-snapchat-ghost,
+.fa-at{
+	color: white;
+}
+input#unos{  
+margin-top:15px;
+padding:5px; 
+}
+.btn{
+background-color:whitesmoke;
+color: black;
+border-radius: 5px;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+padding:5px 5px;
+}
+#unos:hover::placeholder {
+   color:yellow;
+}
+input#unos:hover{
+	background-color:lightskyblue;
+}
+.uredjentext2 {
+	margin-left:28%;
+	margin-right:30%;
+	background-color:rgba(120, 120, 120, 0.8);
+	color:white;
+	font-weight: bold;
+	text-align:justify;
+	padding:25px;
+	border-radius:50px 25px 50px 25px;
+}
+.parallax2 {
+	background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 1)),url(slike/kontakt.jpeg);
+	height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.column2 {
+	width: 100%;
+	font-weight:bold;
+  }
+.formakontakt {
+	padding-top:50px;
+	padding-bottom:100px;
+}
+.prijava {
+	padding:20px;
+	font-size:20px;
+	border-width:5px;  
+	border-style:solid dotted;
+	border-color:red;
+	border-radius:25px;
+	width:30%;
+	text-align:justify;
+	text-shadow: 2px 2px gray;
+	margin-top:3%;
+	margin-right: 40px;
+}
+.uredjentext3 {
+	background-color:rgba(120, 120, 120, 0.8);
+	color:Black;
+	font-weight: bold;
+	border-radius:50px 25px 50px 25px;
+	font-weight:bold;
+	font-size:16px;
+	padding-bottom:10px;
+}
+textarea {
+	resize: none;
+ }
+.mapouter {
+	text-align:right;
+	height:400px;
+	width:450px;
+}
+#gmap_canvas {
+	height:	380px;
+	width: 450px;
+}
+.tehoptimize:hover{
+	height:auto;
+	width:50%;
+}
+.tehoptimize{
+	height:auto;
+	width:40%;
+}
+@media only screen and (max-width: 992px) {
+.ham {
+	width:70px;
+	margin-bottom:-3px;
+}
+.nav {
+	display:none;
+}
+.padajuci {
+    display: inline-block;
+}
+
+.padajuciElementi {
+    display: none;
+    position: absolute;
+    background-color:gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.padajuciElementi a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	color:white;
+	font-weight:bold;
+	
+}
+
+.padajuciElementi a:hover {background-color: lightSkyBlue;}
+
+.padajuci:hover .padajuciElementi {display: block;}
+.column {
+	width: 100%;
+}
+.column3{
+	width:100%;
+}
+.container{
+	height:350px;
+}
+.animacija {
+	display:none;
+}
+.parallax{
+	height:1000px;
+}
+.parallax2 {
+	height: 1300px;
+}
+.komp {
+	float:none;
+}
+input#unos{ 
+display: block; 
+width: 50%; 
+}
+.inlinetext{
+	font-size: 24px;
+	text-align:center;
+}
+#reg {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 12px;
+}
+.btn {
+margin-top:5px;
+}
+.bojatel{
+	color:white;
+}
+#gmap_canvas {
+	height:	100%;
+	width:auto;
+}
+.tehoptimize:hover{
+	height:auto;
+	width:40%;
+}
+.uredjentext2 {
+	margin-left:0%;
+	margin-right:0%;
+	padding:none;
+}
+.prijava {
+	width:80%;
+}
+.parallax1{
+	height: 750px;	
+}
+}
+@media only screen and (max-width: 600px) {
+.column{
+	width: 100%;
+}
+.column3{
+	width:100%;
+}
+.container{
+	height:350px;
+}
+.animacija {
+	display:none;
+}
+.parallax{
+	height: 1650px;
+}
+.komp {
+    float:left;
+}
+input#unos{ 
+display: block; 
+width: 40%; 
+}
+.inlinetext{
+	font-size:15px;
+	padding-bottom:10px;
+}
+#reg {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+.btn{
+margin-top:5px;
+}
+.parallax2 {
+	height: 1300px;
+}
+.bojatel{
+	color:white;
+}
+#gmap_canvas {
+	height:	100%;
+	width:auto;
+}
+.tehoptimize:hover{
+	height:auto;
+	width:40%;
+}
+.uredjentext2 {
+	margin-left:0%;
+	margin-right:0%;
+	padding:none;
+}
+.prijava {
+	width:80%;
+}
+.parallax1{
+	height: 1050px;	
+}
+}
